@@ -1,6 +1,6 @@
 class Solution {
     public boolean isValid(String s) {
-        String temp="{,},(,),[,]";
+        
         if(s.length()%2!=0){
             return false;
         }
