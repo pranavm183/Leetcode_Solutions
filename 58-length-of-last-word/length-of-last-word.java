@@ -1,11 +1,8 @@
 class Solution {
     public int lengthOfLastWord(String s) {
-        String cleaned=s.trim();
-        int ans=cleaned.lastIndexOf(" ")+1;
-        int length=0;
-        for(int i=ans;i<cleaned.length();i++){
-            length++;
-        }
-        return length;
+        s=s.trim();
+        int n=s.lastIndexOf(" ");
+        String last=s.substring(n+1);
+        return last.length();
     }
 }
